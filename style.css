@@ -7,6 +7,7 @@
   vertical-align: baseline;
   font: inherit;
   color: inherit;
+  transition: 0.5s;
 }
 
 :root {
@@ -61,7 +62,6 @@ main .list * {
   font-size: 1.2rem;
   padding: 0px 10px;
   text-decoration: none;
-  transition: 0.5s;
 }
 
 main .list *:hover {
@@ -70,8 +70,9 @@ main .list *:hover {
 }
 
 main #list-kurdish * {
-  font-family: "UniQAIDAR_ALI";
+  font-family: UniQAIDAR_POSTER;
   text-align: right;
+  font-size: 1.5rem;
 }
 
 /* center / links end */
