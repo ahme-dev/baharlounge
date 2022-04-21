@@ -46,7 +46,7 @@ main {
   grid-template-columns: 1fr 1fr;
   margin: auto 5vw;
   padding: 40px 0;
-  height: 80%;
+  height: 85%;
 }
 
 main .list {
@@ -59,7 +59,7 @@ main .list {
 
 main .list * {
   font-family: Pacifico;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0px 10px;
   text-decoration: none;
 }
@@ -72,7 +72,7 @@ main .list *:hover {
 main #list-kurdish * {
   font-family: UniQAIDAR_POSTER;
   text-align: right;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* center / links end */
@@ -85,7 +85,7 @@ footer {
 }
 
 footer img {
-  width: 1.6rem;
+  width: 1.5rem;
   margin: 0 10px;
 }
 
