@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font: inherit;
+  color: inherit;
+}
+
+:root {
+  font-size: 5vw;
+}
+
+/* overarching elements  */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #222;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 1fr 7fr 1fr;
+}
+
+/* displayed elements  */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Pacifico;
+  font-size: 2rem;
+}
+
+/* center / links */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto 5vw;
+  padding: 40px 0;
+  height: 80%;
+}
+
+main .list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+main .list * {
+  font-family: Pacifico;
+  font-size: 1.2rem;
+  padding: 0px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+main .list *:hover {
+  color: whitesmoke;
+  background-color: #222;
+}
+
+main #list-kurdish * {
+  font-family: "UniQAIDAR_ALI";
+  text-align: right;
+}
+
+/* center / links end */
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 5px;
+}
+
+footer img {
+  width: 1.6rem;
+  margin: 0 10px;
+}
+
+@media (orientation: landscape) {
+  :root {
+    font-size: 2vw;
+  }
+}
+
+/* bg animations */
+
+.bg {
+  animation: slide 9s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(252, 250, 240) 50%,
+    rgb(225, 238, 247) 50%
+  );
+  opacity: 0.5;
+  position: fixed;
+  left: -50%;
+  right: -50%;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 9s;
+}
+
+.bg3 {
+  animation-duration: 9s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
