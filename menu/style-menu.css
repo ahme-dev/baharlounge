@@ -19,14 +19,16 @@ body {
 .menu-box {
   display: flex;
   flex-flow: row wrap;
+  max-width: 900px;
+  margin: auto;
 }
 
 .menu-box * {
   overflow: hidden;
-  margin: 20px;
+  margin: 1%;
   width: 100%;
   border-radius: 30px;
-  border: solid 10px #333;
+  border: solid 5px #333;
 }
 
 /* animation on bg */
