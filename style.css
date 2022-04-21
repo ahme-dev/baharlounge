@@ -29,7 +29,7 @@ body {
   grid-template-rows: 1fr 7fr 1fr;
 }
 
-/* displayed elements  */
+/* mainpage displayed elements  */
 
 header {
   display: flex;
@@ -40,9 +40,9 @@ header {
 }
 
 header h1 {
-  animation: colorchange 1s ease-in-out infinite;
-  border-bottom: solid darkred 5px;
-  padding-bottom: 5px;
+  animation: colorchange 0.8s ease-in-out infinite;
+  border-bottom: solid transparent 5px;
+  padding-bottom: 8px;
   border-radius: 5px;
 }
 
@@ -107,6 +107,8 @@ footer img {
   width: 1.5rem;
   margin: 0 10px;
 }
+
+/* fonts smaller on wide screens */
 
 @media (orientation: landscape) {
   :root {

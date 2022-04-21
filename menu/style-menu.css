@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font: inherit;
+  color: inherit;
+  transition: 0.5s;
+}
+
+/* elements displayed */
+
+body {
+  color: #222;
+}
+
+.menu-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.menu-box * {
+  overflow: hidden;
+  margin: 20px;
+  width: 100%;
+  border-radius: 30px;
+  border: solid 10px #333;
+}
+
+/* animation on bg */
+
+.bg {
+  animation: slide 9s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(252, 250, 240) 50%,
+    rgb(225, 238, 247) 50%
+  );
+  opacity: 0.5;
+  position: fixed;
+  left: -50%;
+  right: -50%;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 9s;
+}
+
+.bg3 {
+  animation-duration: 9s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
