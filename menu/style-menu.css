@@ -19,27 +19,22 @@ body {
 .menu-box {
   display: flex;
   flex-flow: row wrap;
-  max-width: 900px;
   margin: auto;
 }
 
 .menu-box * {
   overflow: hidden;
-  margin: 1%;
+  margin: 2%;
   width: 100%;
   border-radius: 30px;
-  border: solid 5px #333;
+  border: solid 5px mediumspringgreen;
 }
 
-/* animation on bg */
+/* bg animations */
 
 .bg {
   animation: slide 9s ease-in-out infinite alternate;
-  background-image: linear-gradient(
-    -60deg,
-    rgb(252, 250, 240) 50%,
-    rgb(225, 238, 247) 50%
-  );
+  background-image: linear-gradient(-60deg, #047047 50%, #267054 50%);
   opacity: 0.5;
   position: fixed;
   left: -50%;
