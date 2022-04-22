@@ -17,9 +17,9 @@
 /* overarching elements  */
 
 body {
-  width: 100vw;
   height: 100vh;
   color: #222;
+  background-color: #222;
 }
 
 .container {
@@ -27,85 +27,79 @@ body {
   height: 100%;
   width: 100%;
   grid-template-rows: 1fr 7fr 1fr;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 /* mainpage displayed elements  */
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Pacifico;
-  font-size: 2rem;
+  font-size: 2.8rem;
+  height: 100vh;
+  scroll-snap-align: center;
 }
 
 header h1 {
-  animation: colorchange 0.8s ease-in-out infinite;
-  border-bottom: solid transparent 5px;
-  padding-bottom: 8px;
-  border-radius: 5px;
+  background-color: mediumspringgreen;
+  color: #222;
+  text-align: center;
+  width: 100%;
+  padding: 5% 0;
+  margin-bottom: 30px;
 }
 
-@keyframes colorchange {
-  0% {
-    border-bottom: solid 5px #333;
-  }
-  50% {
-    border-bottom: solid 5px grey;
-  }
-  100% {
-    border-bottom: solid 5px #333;
-  }
+header img {
+  width: 3rem;
+  opacity: 0.85;
+  background-color: #00fa9a;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 /* center / links */
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto 5vw;
-  padding: 40px 0;
-  height: 85%;
+  grid-template-rows: 1fr;
+  scroll-snap-align: center;
+  height: 100vh;
+  scroll-snap-type: y;
+  overflow-y: scroll;
 }
 
 main .list {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  margin: 0 auto;
-  width: fit-content;
+  width: 70%;
+  margin: 10% auto;
+  padding: 5%;
+  background-color: mediumspringgreen;
+  border-radius: 10px;
+  scroll-snap-align: center;
 }
 
 main .list * {
   font-family: "Oleo Script";
   font-size: 1.1rem;
-  padding: 0px 10px;
+  padding: 5px 20px;
+  border-radius: 10px;
   text-decoration: none;
 }
 
 main .list *:hover {
-  color: whitesmoke;
+  color: mediumspringgreen;
   background-color: #222;
 }
 
 main #list-kurdish * {
   font-family: UniQAIDAR_POSTER;
   text-align: right;
-  font-size: 1.3rem;
-}
-
-/* center / links end */
-
-footer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin: 5px;
-}
-
-footer img {
-  width: 1.5rem;
-  margin: 0 10px;
 }
 
 /* fonts smaller on wide screens */
@@ -114,17 +108,17 @@ footer img {
   :root {
     font-size: 2vw;
   }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* bg animations */
 
 .bg {
   animation: slide 9s ease-in-out infinite alternate;
-  background-image: linear-gradient(
-    -60deg,
-    rgb(252, 250, 240) 50%,
-    rgb(225, 238, 247) 50%
-  );
+  background-image: linear-gradient(-60deg, #047047 50%, #267054 50%);
   opacity: 0.5;
   position: fixed;
   left: -50%;
