@@ -27,8 +27,6 @@ body {
   height: 100%;
   width: 100%;
   grid-template-rows: 1fr 7fr 1fr;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 /* mainpage displayed elements  */
@@ -41,7 +39,6 @@ header {
   font-family: Pacifico;
   font-size: 2.8rem;
   height: 100vh;
-  scroll-snap-align: center;
 }
 
 header h1 {
@@ -66,10 +63,7 @@ header img {
 main {
   display: grid;
   grid-template-rows: 1fr;
-  scroll-snap-align: center;
   height: 100vh;
-  scroll-snap-type: y;
-  overflow-y: scroll;
 }
 
 main .list {
@@ -81,7 +75,6 @@ main .list {
   padding: 5%;
   background-color: mediumspringgreen;
   border-radius: 10px;
-  scroll-snap-align: center;
 }
 
 main .list * {
