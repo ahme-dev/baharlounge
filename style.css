@@ -71,7 +71,7 @@ main .list {
   flex-flow: column nowrap;
   justify-content: space-between;
   width: 70%;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 5%;
   background-color: mediumspringgreen;
   border-radius: 10px;
